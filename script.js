@@ -407,7 +407,22 @@ for (let i = 0; i< marks.length; i++){
 //================shift=======================
 // let numbers =["30", "40","50"]
 // numbers.shift();
-// console.log(numbers)
+// console.log(numbers);
+//=============================================
+// let fruits =["mango","Banana"]
+// fruits.unshift("apple");
+// fruits.push("orange");
+
+// console.log(fruits);
+//=============================================
+// let fruits = ["mango"];
+
+// fruits.push("banana");
+// fruits.unshift("apple");
+// fruits.pop();
+
+// console.log(fruits);
+//==============================================
 
 
 
