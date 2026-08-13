@@ -422,7 +422,51 @@ for (let i = 0; i< marks.length; i++){
 // fruits.pop();
 
 // console.log(fruits);
-//==============================================
+//==================Array with loops============
+
+// let fruits = ["apple", "mango", "banana", "orange"];
+// for(let i=0; i<fruits.length; i++){
+//     console.log(fruits[i]);
+// }
+//================================================
+
+// let numbers =[10, 20, 30, 40];
+// let sum =0;
+// for(let i=0; i< numbers.length; i++){
+//     sum =sum + numbers[i];
+// }
+// console.log(sum);
+//================================================
+
+// let numbers = [ 10, 15, 20, 25, 30, 35];
+// let sum  = 0;
+// for (let i=0; i<numbers.length; i++){
+//     sum = sum + numbers[i];
+// }
+// console.log(sum);
+//====================================================
+
+// let number = [10,15,20,25,30,2,4];
+// for (let i=0; i<number.length; i++){
+//     if(number[i] % 2 ===0){
+//         console.log(number[i]);
+//     }
+// }
+//==================================================
+// let number = [ 3,4,6,7,8,10,12 ];
+// let sum = 0;
+// for(let i=0; i<number.length; i++){
+//     if (number[i] % 2 !==0){
+//         console.log(number[i]);
+//     }
+// }
+
+
+
+
+
+
+
 
 
 
