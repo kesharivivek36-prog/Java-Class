@@ -460,19 +460,144 @@ for (let i = 0; i< marks.length; i++){
 //         console.log(number[i]);
 //     }
 // }
+//===============Reverse order me array print==========
 
+// let name =["Modi","Yogi","Rahul","Kejrival"];
+// for(let i = name.length -1; i>=0;i--){
+//     console.log(name[i]);
+// }
+//================for of  Loop==========================
 
+// let numbers =[10, 15, 20, 25, 30];
 
+// for(let number of numbers){
+//     if(number % 2 !== 0){
+//         console.log(number);
+//     }
+// }
 
+// let numbers = [10, 20, 30, 40];
+// let sum = 0;
 
+// for (let number of numbers){
+//     sum = sum +number;
+// }
+// console.log(sum);
 
+// let colors = [ "red","blue","yellow","pink","green","white"];
 
+// for (let color of colors){
+//     console.log(color);
+// }
 
+// let numbers=[11,20,31,40,51,60];
 
+// for (number of numbers){
+//     if (number % 2 === 0){
+//         console.log(number);
+//     }
+// }
 
+// let numbers =[1,2,3,4,5,6,7,8,9,];
+// for (let number of numbers){
+//     if (number % 2 !== 0){
+//         console.log (number);
+//     }
+// }
 
+// let numbers = [10,20,30,40,50];
+// let sum = 0;
 
+// for (let number of numbers){
+//     sum = sum + number;
 
+// }
+// console.log(sum);
 
+//===============for each=======================
 
+// let numbers = [10, 20, 30, 40,50];
+
+// numbers.forEach(function(number){
+//     console.log(number);
+// });
+
+// let fruits = ["apple", "mango", "banana"];
+
+// fruits.forEach(function(fruit,index){
+//     console.log(index,fruit);
+// })
+
+// let numbers = [2,3,4,5,6,7];
+
+// numbers.forEach( function(number,index){
+//     console.log(index,number);
+// }
+
+// )
+
+// let students = ["vivek","sidhant","rahul","baburam"];
+
+// students.forEach(function(student,index){
+//     console.log(index + ":"+ student);
+// }
+
+// )
+
+// let numbers = [10, 15, 20,25, 30];
+
+// numbers.forEach(function(number){
+//     if (number % 2 ===0){
+//         console.log(number);
+//     }
+// }
+
+// )
+
+// let numbers =[10, 20, 30, 40, 50];
+// let sum=0;
+
+// numbers.forEach(function(number){
+//     sum = sum + number;
+// }
+
+// )
+// console.log (sum);
+
+//================mini project======================
+
+// let marks = [75, 82, 68, 90, 55];
+// let total = 0;
+
+// marks.forEach(function(mark,index){
+//     console.log("subject", index + 1, ":", mark);
+// });
+//  console.log("-------------");
+
+//  for(let mark of marks){
+//     total = total + mark;
+//  }
+// console.log("total marks:", total);
+
+// let average = total / marks.length;
+// console.log("average", average);
+
+// let highest = marks[0];
+
+// for(let mark of marks){
+//     if (mark >highest){
+//         highest = mark;
+//     }
+// }
+
+// let lowest = marks[0];
+
+// for(let mark of marks){
+//     if (mark< lowest){
+//         lowest=mark;
+//     }
+// } 
+// console.log("average:", average);
+// console.log("highest mark:", highest);
+// console.log("lowest mark:",lowest );
 
