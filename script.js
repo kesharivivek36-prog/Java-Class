@@ -693,3 +693,73 @@ for (let i = 0; i< marks.length; i++){
 // console.log(getGrade(40));
 // console.log(getGrade(33));
 // console.log(getGrade(90));
+
+// function getGrade(Marks){
+//     if (Marks>=80){
+//         return "A++";
+//     }else if (Marks >=70){
+//         return "A";
+//     } else if (Marks >= 60){
+//         return "B++";
+//     } else if (Marks >=50){
+//         return "B";
+//     }else if (Marks >=30){
+//         return "P";
+//     }else {
+//         return "Fail"
+//     }
+// }
+
+// console.log (getGrade(29));
+// console.log (getGrade(38));
+// console.log (getGrade(95));
+// console.log (getGrade(80));
+// console.log (getGrade(60));
+//=============Arrow Function=======================
+
+// const add =(a,b) =>{
+//     return a+b;
+// };
+// console.log(add(10,20));
+//===============================================
+// const greet = (name) => {
+//     console.log("Hello"+name);
+// };
+
+// greet(" Vivek");
+//=================================================
+//  const square =(number) => number * number;
+//  console.log(square(5));
+
+// const multiply =(a,b) => {
+//     return a * b;
+// };
+// console.log(multiply(5,4));
+
+//===============short Arrow======================
+
+// const add = (a,b) => a+b;
+// console.log(add(5,25));
+//================================================
+// const multiply = (a,b) => a*b;
+// console.log (multiply(10,2));
+//===============================================
+// const hello = () => {
+//     console.log("Hello word");
+// };
+// hello();
+//===============================================
+// const square = (number) => number*number;
+// console.log(square(5));
+//=================================================
+const isAdult =(age) => {
+    if (age >= 18){
+return "Adult";
+    }else{
+        return "Minor";
+    }
+}
+console.log(isAdult(20));
+console.log(isAdult(15));
+
+
