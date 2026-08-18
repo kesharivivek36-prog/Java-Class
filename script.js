@@ -601,3 +601,95 @@ for (let i = 0; i< marks.length; i++){
 // console.log("highest mark:", highest);
 // console.log("lowest mark:",lowest );
 
+//===============function============================
+// function hello(){
+//     console.log("hello world");
+// }
+// hello();
+//===============================================
+// function square(number){
+//     return number * number;
+// }
+// console.log(square(5));
+
+// function add(a,b){
+//     return a+b;
+// }
+// console.log(add(10,20));
+//=============================================
+// function isEven(number){
+//     if (number % 2 === 0){
+//         return "Even";
+//     }else{
+//         return "odd";
+//     }
+// }
+// console.log(isEven(10));
+// console.log(isEven(7));
+//==============Function +calculation======================
+
+// function square(number){
+//     return number * number;
+// }
+// let result = square(10);
+// console.log(result);
+//===========================================
+
+// function calculate(a,b){
+//     return a+b;
+
+// }
+// console.log(calculate(100,50));
+//====================================================
+// function subtraction(a,b){
+//     return a-b;
+
+// }
+// console.log(subtraction(20,10));
+
+//=============================================
+// function multiplication(a,b){
+// return a*b;
+// }
+// console.log(multiplication(5,10));
+//=============================================
+
+// function isAdult(age){
+//     if (age>=18){
+// return "Adult";
+//     }else{
+// return "minor";
+//     }
+// }
+// console.log(isAdult(16));
+// console.log(isAdult(25));
+
+// function isAdult(age){
+//     if (age>=18){
+//         return "adult";
+//     }else{
+//         return "minor"
+//     }
+
+// }
+// console.log(isAdult(12));
+// console.log(isAdult(36));
+//=============================================
+
+// function getGrade(Marks){
+//     if (Marks >= 90){
+//         return "A";
+//     }else if (Marks >= 80){
+//         return "B";
+//     }else if (Marks >= 70){
+//         return "c";
+//     }else if (Marks >= 60){
+//         return "D";
+//     }else{
+//         return "F";
+//     }
+// }
+// console.log(getGrade(85));
+// console.log(getGrade(40));
+// console.log(getGrade(33));
+// console.log(getGrade(90));
