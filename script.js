@@ -752,14 +752,15 @@ for (let i = 0; i< marks.length; i++){
 // const square = (number) => number*number;
 // console.log(square(5));
 //=================================================
-const isAdult =(age) => {
-    if (age >= 18){
-return "Adult";
-    }else{
-        return "Minor";
-    }
-}
-console.log(isAdult(20));
-console.log(isAdult(15));
+// const isAdult =(age) => {
+//     if (age >= 18){
+// return "Adult";
+//     }else{
+//         return "Minor";
+//     }
+// }
+// console.log(isAdult(20));
+// console.log(isAdult(15));
+//==================================================
 
 
