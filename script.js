@@ -763,4 +763,102 @@ for (let i = 0; i< marks.length; i++){
 // console.log(isAdult(15));
 //==================================================
 
+// if (true){
+//     let city ="Lucknow";
+//     console.log(city);
+// }
+//=========================================
+
+// let a = 10; 
+// if (true){
+//     let b =20;
+//     const c =30;
+//     var d =40;
+//     console.log(a);
+//     console.log(b);
+
+// }
+//     console.log(a);
+//      console.log(b);
+//       console.log(c);
+//============block scope===default value===========
+// function greet(name = "Guest") {
+//     console.log("Hello " + name);
+// }
+
+// greet("Vivek");
+// greet();
+
+// function greet(name){
+//     console.log(" Hello "+ name);
+// }
+// greet();
+// function greet(name = "Guest"){
+//     console.log("Hello"+name);
+// }
+// greet();
+//=====================================
+// function add(a=0, b=0){
+//     return a + b;
+// }
+// console.log(add(10,20));
+// console.log(add(10));
+// console.log(add());
+//==============Arrow function =========
+// const greet = (name = "Guest") => {
+//     console.log("Hello" + name);
+// };
+// greet("vivek");
+// greet();
+
+//========================================
+// function show (value = 100){
+//     console.log(value);
+// }
+// show();
+// show(50);
+// show(0);
+//===========================================
+// const calculate = (a =10, b=5) => {
+// return a+b;
+// };
+// console.log(calculate(20, 30));
+// console.log(calculate(20));
+// console.log(calculate());
+//===============callback function============
+// function hello(){
+//     console.log("hello");
+// }
+// function greet (callback){
+//     callback();
+// }
+// greet(hello); 
+//===================================================
+
+// function goodMorning(){
+//     console.log("Good Morning");
+// }
+// function message(callback){
+//     console.log("Message Start");
+//     callback();console.log("message End");
+// }
+// message(goodMorning);
+//===================================================
+    // function greet(name){
+    //     console.log("hello"+name);
+    // }
+    // function processUser(callback){
+    //     callback("vivek");
+    // }
+    // processUser(greet);
+    //===============================================
+    function sayHi(){
+        console.log("Hi vivek");
+    }
+    function run(callback){
+        console.log("start");
+        callback();
+        console.log("End");
+    }
+    run(SayHi);
 
