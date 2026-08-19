@@ -761,6 +761,7 @@ for (let i = 0; i< marks.length; i++){
 // }
 // console.log(isAdult(20));
 // console.log(isAdult(15));
+
 //==================================================
 
 // if (true){
@@ -861,4 +862,7 @@ for (let i = 0; i< marks.length; i++){
         console.log("End");
     }
     run(SayHi);
+
+
+
 
