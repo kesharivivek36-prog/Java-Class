@@ -853,16 +853,178 @@ for (let i = 0; i< marks.length; i++){
     // }
     // processUser(greet);
     //===============================================
-    function sayHi(){
-        console.log("Hi vivek");
+    // function sayHi(){
+    //     console.log("Hi vivek");
+    // }
+    // function run(callback){
+    //     console.log("start");
+    //     callback();
+    //     console.log("End");
+    // }
+    // run(SayHi);
+    //==============Rest parameter + Loop============
+
+    // function add(...numbers){
+    //     let total =0;
+    //     for (let number of numbers){
+    //         total = total + number;
+    //     }
+    //     return total;
+    // }
+    // console.log(add(10, 20, 30,40,50));
+    //===================DOM======================
+    // const heading = document.getElementById("title");
+    // const message = document.getElementById("message");
+    // const button = document.getElementById("btn");
+
+    // button.addEventListener("click", function(){
+    //     heading.innerText ="welcome vivek";
+    //     message.innerText = "you are learning javascript Dom";
+    //     heading.style.color = "red";
+
+    // })
+    //===================================================
+    // let mobile = {
+    //     brand: "samsung",
+    //     price: 25000,
+    //     color: "black"
+    // };
+    // console.log(mobile.brand);
+    // console.log(mobile.price);
+    // console.log(mobile.color);
+    //==================================================
+    // let product = {
+    //     name: "laptop",
+    //     price: 50000,
+    //     "product color" : "black"
+    // };
+    // let key = "price";
+    // console.log(product.name);
+    // console.log(product["product color"]);
+    // console.log(product[key]);
+
+    //====multiple properties method me use karna =========
+//     const student ={
+//         name: "vivek",
+//         age: 25,
+//         city: "lucknow",
+//         details: function (){
+//             console.log(
+//                 this.name + " is " + this.age + " years old "
+//             )
+//         }
+//     }
+// student.details();
+//============================================================
+// const employees =[
+//     {name: "Aman", salary:2000},
+//     {name: "Rahu", salary:5000},
+//     {name: "Neha", salary:4000},
+// ];
+// console.log(employees[1].name);
+// console.log(employees[2].salary);
+// console.log(employees[0].salary);
+//=========================================================
+//============Student management system====================
+const students = [
+    { id: 1, name: "Aman", age: 20, marks: 75 },
+    { id: 2, name: "Rahul", age: 21, marks: 85 },
+    { id: 3, name: "Neha", age: 19, marks: 92 }
+];
+
+
+// Show Students
+
+function showStudents() {
+
+    students.forEach((student) => {
+        console.log(
+            student.id,
+            student.name,
+            student.age,
+            student.marks
+        );
+    });
+
+}
+
+
+// Add Student
+
+function addStudent(id, name, age, marks) {
+
+    const newStudent = {
+        id: id,
+        name: name,
+        age: age,
+        marks: marks
+    };
+
+    students.push(newStudent);
+}
+
+
+// Update Marks
+
+function updateMarks(id, newMarks) {
+
+    students.forEach((student) => {
+
+        if (student.id === id) {
+            student.marks = newMarks;
+        }
+
+    });
+
+}
+
+
+// Delete Student
+
+function deleteStudent(id) {
+
+    const index = students.findIndex((student) => {
+        return student.id === id;
+    });
+
+    if (index !== -1) {
+        students.splice(index, 1);
     }
-    function run(callback){
-        console.log("start");
-        callback();
-        console.log("End");
-    }
-    run(SayHi);
+
+}
 
 
+// Check Results
+
+function checkResults() {
+
+    students.forEach((student) => {
+
+        if (student.marks >= 40) {
+            console.log(student.name + " : Pass");
+        } else {
+            console.log(student.name + " : Fail");
+        }
+
+    });
+
+}
 
 
+// Testing
+
+showStudents();
+
+addStudent(4, "Vivek", 22, 80);
+
+updateMarks(2, 95);
+
+deleteStudent(1);
+
+console.log("After Changes:");
+
+showStudents();
+
+console.log("Results:");
+
+checkResults();
