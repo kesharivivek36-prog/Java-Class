@@ -926,105 +926,128 @@ for (let i = 0; i< marks.length; i++){
 // console.log(employees[0].salary);
 //=========================================================
 //============Student management system====================
-const students = [
-    { id: 1, name: "Aman", age: 20, marks: 75 },
-    { id: 2, name: "Rahul", age: 21, marks: 85 },
-    { id: 3, name: "Neha", age: 19, marks: 92 }
-];
+// const students = [
+//     { id: 1, name: "Aman", age: 20, marks: 75 },
+//     { id: 2, name: "Rahul", age: 21, marks: 85 },
+//     { id: 3, name: "Neha", age: 19, marks: 92 }
+// ];
 
 
-// Show Students
+// // Show Students
 
-function showStudents() {
+// function showStudents() {
 
-    students.forEach((student) => {
-        console.log(
-            student.id,
-            student.name,
-            student.age,
-            student.marks
-        );
-    });
+//     students.forEach((student) => {
+//         console.log(
+//             student.id,
+//             student.name,
+//             student.age,
+//             student.marks
+//         );
+//     });
 
-}
-
-
-// Add Student
-
-function addStudent(id, name, age, marks) {
-
-    const newStudent = {
-        id: id,
-        name: name,
-        age: age,
-        marks: marks
-    };
-
-    students.push(newStudent);
-}
+// }
 
 
-// Update Marks
+// // Add Student
 
-function updateMarks(id, newMarks) {
+// function addStudent(id, name, age, marks) {
 
-    students.forEach((student) => {
+//     const newStudent = {
+//         id: id,
+//         name: name,
+//         age: age,
+//         marks: marks
+//     };
 
-        if (student.id === id) {
-            student.marks = newMarks;
-        }
-
-    });
-
-}
-
-
-// Delete Student
-
-function deleteStudent(id) {
-
-    const index = students.findIndex((student) => {
-        return student.id === id;
-    });
-
-    if (index !== -1) {
-        students.splice(index, 1);
-    }
-
-}
+//     students.push(newStudent);
+// }
 
 
-// Check Results
+// // Update Marks
 
-function checkResults() {
+// function updateMarks(id, newMarks) {
 
-    students.forEach((student) => {
+//     students.forEach((student) => {
 
-        if (student.marks >= 40) {
-            console.log(student.name + " : Pass");
-        } else {
-            console.log(student.name + " : Fail");
-        }
+//         if (student.id === id) {
+//             student.marks = newMarks;
+//         }
 
-    });
+//     });
 
-}
+// }
 
 
-// Testing
+// // Delete Student
 
-showStudents();
+// function deleteStudent(id) {
 
-addStudent(4, "Vivek", 22, 80);
+//     const index = students.findIndex((student) => {
+//         return student.id === id;
+//     });
 
-updateMarks(2, 95);
+//     if (index !== -1) {
+//         students.splice(index, 1);
+//     }
 
-deleteStudent(1);
+// }
 
-console.log("After Changes:");
 
-showStudents();
+// // Check Results
 
-console.log("Results:");
+// function checkResults() {
 
-checkResults();
+//     students.forEach((student) => {
+
+//         if (student.marks >= 40) {
+//             console.log(student.name + " : Pass");
+//         } else {
+//             console.log(student.name + " : Fail");
+//         }
+
+//     });
+
+// }
+
+
+// // Testing
+
+// showStudents();
+
+// addStudent(4, "Vivek", 22, 80);
+
+// updateMarks(2, 95);
+
+// deleteStudent(1);
+
+// console.log("After Changes:");
+
+// showStudents();
+
+// console.log("Results:");
+
+// checkResults();
+
+//===========Events & Event Listener========
+
+// const button = document.getElementById("btn");
+
+// button.addEventListener("click", function (){
+//     console.log("Button Clicked");
+// });
+
+//================================================
+// const title = document.getElementById("title");
+// const button = document.getElementById("btn");
+
+// button.addEventListener("click", function(){
+//     title.textContent ="Hello Vivek";
+// });
+//==================================================
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click",()=>{
+    console.log("Button clicked");
+});
+
