@@ -1045,9 +1045,34 @@ for (let i = 0; i< marks.length; i++){
 //     title.textContent ="Hello Vivek";
 // });
 //==================================================
-const btn = document.getElementById("btn");
+// const btn = document.getElementById("btn");
 
-btn.addEventListener("click",()=>{
-    console.log("Button clicked");
-});
+// btn.addEventListener("click",()=>{
+//     console.log("Button clicked");
+// });
+//==================================================
+// const title = document.getElementById("title");
+// const btn = document.getElementById("btn");
 
+// btn.addEventListener("click",() =>{
+//     title.style.color ="red";
+// });
+
+//=================click counter ==================
+// const countText = document.getElementById("count");
+// const plusBtn = document.getElementById("plus");
+// const minusBtn = document.getElementById("minus");
+
+// let count = 0;
+
+// plusBtn.addEventListener("click", () => {
+//     count++;
+//     countText.textContent = count;
+// });
+
+// minusBtn.addEventListener("click", () => {
+//     count--;
+//     countText.textContent = count;
+// });
+
+//====================Mouse events ===================
