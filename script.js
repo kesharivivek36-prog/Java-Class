@@ -1059,20 +1059,20 @@ for (let i = 0; i< marks.length; i++){
 // });
 
 //=================click counter ==================
-// const countText = document.getElementById("count");
-// const plusBtn = document.getElementById("plus");
-// const minusBtn = document.getElementById("minus");
+const countText = document.getElementById("count");
+const plusBtn = document.getElementById("plus");
+const minusBtn = document.getElementById("minus");
 
-// let count = 0;
+let count = 0;
 
-// plusBtn.addEventListener("click", () => {
-//     count++;
-//     countText.textContent = count;
-// });
+plusBtn.addEventListener("click", () => {
+    count++;
+    countText.textContent = count;
+});
 
-// minusBtn.addEventListener("click", () => {
-//     count--;
-//     countText.textContent = count;
-// });
+minusBtn.addEventListener("click", () => {
+    count--;
+    countText.textContent = count;
+});
 
-//====================Mouse events ===================
+//====================Mouse events ================
