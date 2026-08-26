@@ -1042,7 +1042,7 @@ for (let i = 0; i< marks.length; i++){
 // const button = document.getElementById("btn");
 
 // button.addEventListener("click", function(){
-//     title.textContent ="Hello Vivek";
+//     title.textContent =" Hello Vivek " ;
 // });
 //==================================================
 // const btn = document.getElementById("btn");
@@ -1059,20 +1059,49 @@ for (let i = 0; i< marks.length; i++){
 // });
 
 //=================click counter ==================
-const countText = document.getElementById("count");
-const plusBtn = document.getElementById("plus");
-const minusBtn = document.getElementById("minus");
+// const countText = document.getElementById("count");
+// const plusBtn = document.getElementById("plus");
+// const minusBtn = document.getElementById("minus");
 
-let count = 0;
+// let count = 0;
 
-plusBtn.addEventListener("click", () => {
-    count++;
-    countText.textContent = count;
+// plusBtn.addEventListener("click", () => {
+//     count++;
+//     countText.textContent = count;
+// });
+
+// minusBtn.addEventListener("click", () => {
+//     count--;
+//     countText.textContent = count;
+// });
+
+//====================input and change Events ========
+
+// const input =document.getElementById("name");
+//  input .addEventListener("input", () =>{
+//     console.log("user is typing...");
+//  })
+//====================================================
+//==========Forms & form Validation==================
+// const form = document.getElementById("loginForm");
+
+// form.addEventListener("submit", (event) => {
+
+//     event.preventDefault();
+
+//     console.log("Form Submitted");
+// });
+
+//==================================================
+
+const form = document.getElementById("loginForm");
+const username = document.getElementById("username");
+const password = document.getElementById("password");
+
+form.addEventListener("submit", (e) => {
+
+    e.preventDefault();
+
+    console.log(username.value);
+    console.log(password.value);
 });
-
-minusBtn.addEventListener("click", () => {
-    count--;
-    countText.textContent = count;
-});
-
-//====================Mouse events ================
