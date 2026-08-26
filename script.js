@@ -1091,15 +1091,15 @@ for (let i = 0; i< marks.length; i++){
 
 //==================================================
 
-// const forms = document.getElementById("loginForm");
-// const username = document.getElementById("username");
-// const password = document.getElementById("password");
+const forms = document.getElementById("loginForm");
+const username = document.getElementById("username");
+const password = document.getElementById("password");
 
-// form.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e) => {
 
-//     e.preventDefault();
+    e.preventDefault();
 
-//     console.log(username.value);
-//     console.log(password.value);
-// });
+    console.log(username.value);
+    console.log(password.value);
+});
 
