@@ -1091,15 +1091,78 @@ for (let i = 0; i< marks.length; i++){
 
 //==================================================
 
-const forms = document.getElementById("loginForm");
+// const forms = document.getElementById("loginForm");
+// const username = document.getElementById("username");
+// const password = document.getElementById("password");
+
+//  form.addEventListener("submit", (e) => {
+
+//     e.preventDefault();
+
+//     console.log(username.value);
+//     console.log(password.value);
+// });
+
+
+//========multiple field validation================
+
+const form = document.getElementById("registerForm");
+
 const username = document.getElementById("username");
+const email = document.getElementById("email");
 const password = document.getElementById("password");
+
+const usernameError = document.getElementById("usernameError");
+const emailError = document.getElementById("emailError");
+const passwordError = document.getElementById("passwordError");
 
 form.addEventListener("submit", (e) => {
 
     e.preventDefault();
 
-    console.log(username.value);
-    console.log(password.value);
-});
+    usernameError.textContent = "";
+    emailError.textContent = "";
+    passwordError.textContent = "";
 
+    let isValid = true;
+
+    // Username
+    if (username.value.trim() === "") {
+
+        usernameError.textContent = "Username is required";
+        isValid = false;
+
+    }
+
+    // Email
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (email.value.trim() === "") {
+
+        emailError.textContent = "Email is required";
+        isValid = false;
+
+    } else if (!emailPattern.test(email.value)) {
+
+        emailError.textContent = "Invalid email";
+        isValid = false;
+
+    }
+
+    // Password
+    if (password.value.length < 6) {
+
+        passwordError.textContent =
+            "Password must be at least 6 characters";
+
+        isValid = false;
+    }
+
+    // Final Result
+    if (isValid) {
+
+        console.log("Registration Successful");
+
+    }
+
+});
